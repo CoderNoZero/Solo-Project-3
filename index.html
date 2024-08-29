@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+    <script>
+        function setup(){
+            createCanvas(windowWidth,windowHeight);
+            background("Green")
+        }
+        function draw(){
+            fill("gold")
+            square(x,y,50); 
+            if(keyIsPressed === true){
+                print(keyCode);
+                if(keyCode === 68){
+                    print("left");
+                    x -= 7;
+                } else if(keyCode === 65){
+                    print("right");
+                    x += 7;
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
