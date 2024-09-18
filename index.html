@@ -10,6 +10,7 @@
     <script>
         let x = 0
         let y = 500
+        let ciX = 550
         function setup(){
             createCanvas(windowWidth,windowHeight);
             x = windowWidth/2
@@ -29,10 +30,11 @@
                 }
             }
             fill("blue")
-            circle(570,200,100)
-            circle(550,180,100)
-            circle(590,170,100)
-            circle(555,190,100)
+            circle(ciX+20,200,100)
+            circle(ciX,180,100)
+            circle(ciX+90,170,100)
+            circle(ciX+5,190,100)
+            ciX+=1
         }
     </script>
     
