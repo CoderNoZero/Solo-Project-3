@@ -11,6 +11,7 @@
         let x = 0
         let y = 500
         let ciX = 550
+        let forward = true 
         function setup(){
             createCanvas(windowWidth,windowHeight);
             x = windowWidth/2
@@ -34,7 +35,17 @@
             circle(ciX,180,100)
             circle(ciX+90,170,100)
             circle(ciX+5,190,100)
+            if(forward == true){
             ciX+=1
+            }else{
+                ciX+-1
+            }
+            if(ciX > windowWidth){
+                foward = false
+            }
+            if(ciX < 0){
+                forward = true 
+            }
         }
     </script>
     
