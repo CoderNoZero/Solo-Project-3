@@ -13,7 +13,8 @@
         let ciX = 550
         let forward = true 
         let lX = 0
-        let down = false
+        let movedown= false
+        let lY = 0
         function setup(){
             createCanvas(windowWidth,windowHeight);
             x = windowWidth/2
@@ -48,15 +49,23 @@
             if(ciX < 0){
                 forward = true 
             }
-            triangle(lX+windowWidth/2-20, windowHeight/2+25, lX+windowWidth/2+20, windowHeight/2-25,lX+windowWidth/2+36, windowHeight/2+25);
+            triangle(lX+windowWidth/2-20, lY+windowHeight/2+25, lX+windowWidth/2+20, lY+windowHeight/2-25,lX+windowWidth/2+36, lY+windowHeight/2+25);
             if(forward == true){
                 lX += 5
             }else{
                 lX -= 5
             }
+            function movedown(){
+                console.log("I am inevitable")
+            }
         }
-        setInterval(console.log("I am inevitable"),3000)
-        console.log("20:33")
+
+
+        setInterval(movedown,3000)
+        if(movedown == true){
+            lY -= 5
+        }
+        console.log("20:39")
     </script>
     
 </body>
