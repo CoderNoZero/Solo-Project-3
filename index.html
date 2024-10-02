@@ -13,7 +13,7 @@
         let ciX = 550
         let forward = true 
         let lX = 0
-        let movedown= false
+        let moveDown= false
         let lY = 5
         function setup(){
             createCanvas(windowWidth,windowHeight);
@@ -55,11 +55,16 @@
             }else{
                 lX -= 5
             }
+            if(moveDown=true){
+                lY -= 5
+            }
         }
+
 
 
         function liDown(){
                 console.log("I am inevitable")
+                moveDown = true 
             }
         setInterval(liDown,3000)
         console.log("19:31")
