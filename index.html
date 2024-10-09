@@ -22,6 +22,7 @@
         }
         function draw(){
             background("Green")
+            text("Score:" + score,0,0)
             fill("gold")
             square(x,y,50); 
             if(keyIsPressed === true){
@@ -62,8 +63,6 @@
             if(lY > windowHeight){
                 lY = 5
             }
-            fill("black")
-            text("Score:" + score,0,0)
         }
 
 
