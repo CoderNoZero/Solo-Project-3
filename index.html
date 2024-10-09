@@ -15,6 +15,7 @@
         let lX = 0
         let moveDown= false
         let lY = 5
+        let score = 0
         function setup(){
             createCanvas(windowWidth,windowHeight);
             x = windowWidth/2
@@ -61,6 +62,7 @@
             if(lY > windowHeight){
                 lY = 5
             }
+            text(0,0,"Score:" + score)
         }
 
 
