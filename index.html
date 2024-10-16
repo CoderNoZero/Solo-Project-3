@@ -64,9 +64,11 @@
                 console.log("It's the mickey mouse clubhouse")
                 lY = 5
             }
-        if(lY > y){
-          console.log("missed me")
-        }
+            if(lY > y){ 
+                if(lX > x && lX < x + 50){
+                    console.log("caught me ")
+                }
+            }
         }
         //pseudocode logic for if the lightnight bolt is touching the square increase scroe by 1
         //style and position score board 
@@ -79,7 +81,7 @@
                 moveDown = true 
             }
         setInterval(liDown,3000)
-        console.log("19:54")
+        console.log("20:06")
         
     </script>
     
